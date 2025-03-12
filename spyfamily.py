@@ -1,25 +1,30 @@
 
 #%%
 mangaList = [
-    "https://www.lermangas.com.br/2024/09/solo-leveling-capitulo-1.html",
+    "https://mangaonline.blog/manga/spy-x-family-manga/capitulo-103-pt-br/",
+    "https://mangaonline.blog/manga/spy-x-family-manga/capitulo-102-pt-br/",
+    "https://mangaonline.blog/manga/spy-x-family-manga/capitulo-101-pt-br/",
+    "https://mangaonline.blog/manga/spy-x-family-manga/capitulo-100-pt-br/",
+    "https://mangaonline.blog/manga/spy-x-family-manga/capitulo-99-pt-br/",
+    "https://mangaonline.blog/manga/spy-x-family-manga/capitulo-98-pt-br/",
 ]
 #%%
 import requests
 import os
 def folderName(url):
     folder = url.split('/')[5].replace('.html','')
-    num = folder.split('-')[3]
+    num = folder.split('-')[1]
     znum = num.zfill(4)
-    return folder.replace(f'-{num}',f'-{znum}')
+    return znum
 
 def fileName(url):
-    file = url.split('/')[8]
-    num = file.split('-')[0]
+    file = url.replace('download-(','').replace(')','').split('/')[9]
+    num = file.split('.')[0]
     znum = num.zfill(4)
-    result = file.replace(f'{num}-',f'{znum}-')
+    result = file.replace(f'{num}',f'{znum}')
     if 'https://mangaonline.biz/wp-content/uploads/' in url:
         result = url.split('/')[7]
-    # print(result)
+    print(result)
     return result
 
 def getManga(manga):
@@ -31,7 +36,7 @@ def getManga(manga):
     newpath = f'./{folder}'
     if not os.path.exists(newpath):
         os.makedirs(newpath)
-        # print('pasta criada')
+        # print(f'pasta criada {newpath}')
     else:
         print('manga já baixado')
         return
@@ -40,17 +45,14 @@ def getManga(manga):
     headers = {}
     response = requests.request("GET", url, headers=headers, data=payload)
 
-    imagesRaw = response.text.split("script>")
-    # "https://mangaonline.biz/wp-content/uploads/2022/09/img_or04121905_0001.jpg",
+    imagesRaw = response.text.split('"')
+    listRawImages = []
     for chunk in imagesRaw:
-        if 'https://meo.comick.pictures' in chunk or 'https://mangaonline.biz/wp-content/uploads/' in chunk:
-            listRawImages = chunk.replace("const ts_reader = ", "").replace(";", "").replace("\n", "").replace("</", "").replace(" ", "")
-            # print(f'imagens: {listRawImages}')
+        if 'https://mangaonline.blog/wp-content/uploads/WP-manga' in chunk or 'https://mangaonline.blog/wp-content/uploads/WP-manga' in chunk:
+            listRawImages.append(chunk.replace("	",''))
         
-    listImages = listRawImages.replace('["','').replace('",]','').replace('"]','').split('","')
-    
     # baixar imagens
-    for image in listImages:
+    for image in listRawImages:
         print(f'imagens: {image}')
         img_data = requests.get(image).content
         file = fileName(image)
@@ -198,7 +200,7 @@ mypath = './'
 
 onlyfolders = [f for f in listdir(mypath) if isdir(join(mypath, f))]
 onlyfolders.sort()
-# onlyfolders.remove('.git')
+onlyfolders.remove('.git')
 print(onlyfolders)
 
 conteudo = '# Spy Family\n\n'
