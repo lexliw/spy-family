@@ -9,6 +9,7 @@ mangaList = [
     "https://mangaonline.blog/manga/spy-x-family-manga/capitulo-98-pt-br/",
 ]
 #%%
+# capitura do site https://mangaonline.blog/manga/spy-x-family-manga/
 import requests
 import os
 def folderName(url):
@@ -59,9 +60,171 @@ def getManga(manga):
         with open(f'./{folder}/{file}', 'wb') as handler:
             handler.write(img_data)
 
-    # return listImages
+
+
 #%%
-# lista = getManga('https://www.lermangas.com.br/2024/09/solo-leveling-capitulo-96.html')
+mangaList = [
+    "https://mangaonline.biz/capitulo/spy-x-family-capitulo-89/",
+    "https://mangaonline.biz/capitulo/spy-x-family-capitulo-88/",
+    "https://mangaonline.biz/capitulo/spy-x-family-capitulo-87/",
+    "https://mangaonline.biz/capitulo/spy-x-family-capitulo-86/",
+    "https://mangaonline.biz/capitulo/spy-x-family-capitulo-85/",
+    "https://mangaonline.biz/capitulo/spy-x-family-capitulo-84/",
+    "https://mangaonline.biz/capitulo/spy-x-family-capitulo-83/",
+    "https://mangaonline.biz/capitulo/spy-x-family-capitulo-82/",
+    "https://mangaonline.biz/capitulo/spy-x-family-capitulo-81/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-80/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-79/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-78-5/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-78/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-77/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-76/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-75/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-74/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-73/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-72/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-71/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-70/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-69/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-68-5/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-68/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-67-2/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-67/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-66/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-65/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-64/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-63/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-62-4/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-62-3/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-62-2/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-62-1/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-61/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-60/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-59/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-58-3/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-58-2/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-58-1/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-57/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-56/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-55/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-54/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-53/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-52/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-51-5/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-51/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-50/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-49/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-48/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-47/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-46/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-45/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-44/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-43/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-42/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-41/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-40-5/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-40/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-39/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-38/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-37/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-36/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-35/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-34/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-33/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-32/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-31/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-30/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-29/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-28/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-27-5/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-27/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-26/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-25/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-24-5/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-24/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-23/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-22/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-21/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-20/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-19/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-18-5/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-18/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-17/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-16/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-15-6/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-15-5/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-15/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-14/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-13/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-12/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-11/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-10/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-9/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-8-5/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-8/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-7/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-6/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-5/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-4/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-3/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-2/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-1/",
+]
+#%%
+# capitura do site https://mangaonline.blog/manga/spy-x-family-manga/
+import requests
+import os
+def folderName(url):
+    folder = url.split('/')[4].replace('.html','')
+    num = folder.split('-')[4]
+    znum = num.zfill(4)
+    return znum
+
+def fileName(url):
+    # https://mangaonline.biz/wp-content/uploads/2023/05/img_or2805231927_0005.png"
+    # file = url.replace('download-(','').replace(')','').split('/')[9]
+    # num = file.split('.')[0]
+    # znum = num.zfill(4)
+    # result = file.replace(f'{num}',f'{znum}')
+    if 'https://mangaonline.biz/wp-content/uploads/' in url:
+        result = url.split('/')[7]
+    print(result)
+    return result
+
+def getManga(manga):
+    url = manga
+    folder = folderName(url)
+    print(folder)
+
+    # criar pasta
+    newpath = f'./{folder}'
+    if not os.path.exists(newpath):
+        os.makedirs(newpath)
+        # print(f'pasta criada {newpath}')
+    else:
+        print('manga já baixado')
+        return
+    
+    payload = {}
+    headers = {}
+    response = requests.request("GET", url, headers=headers, data=payload)
+
+    imagesRaw = response.text.split('"')
+    listRawImages = []
+    for chunk in imagesRaw:
+        if 'https://mangaonline.biz/wp-content/uploads' in chunk or 'https://mangaonline.biz/wp-content/uploads' in chunk:
+            listRawImages.append(chunk)
+    # tirar duplicados
+    listRawImages = list(set(listRawImages))
+    listRawImages.sort()
+    # baixar imagens
+    for image in listRawImages:
+        print(f'imagens: {image}')
+        img_data = requests.get(image).content
+        file = fileName(image)
+        with open(f'./{folder}/{file}', 'wb') as handler:
+            handler.write(img_data)
+
 #%%
 
 for manga in mangaList:
@@ -116,7 +279,7 @@ response = requests.request("POST", url, headers=headers, data=payload)
 print(response.status_code)
 
 # %%
-# https://spyfamily.manganyaa.com/ler-online-gratis-portugues
+# captira do site https://spyfamily.manganyaa.com/ler-online-gratis-portugues
 # https://content.manganyaa.com/file/mnyaaa/spyfamily/pt/1/1.jpg
 
 import requests

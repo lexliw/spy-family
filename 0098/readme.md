@@ -1,5 +1,5 @@
 # 0098
-##### [ANTERIOR](/spy-family/0080/)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[MENU](/spy-family/)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[PRÓXIMO](/spy-family/0099/)
+##### [ANTERIOR](/spy-family/0089/)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[MENU](/spy-family/)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[PRÓXIMO](/spy-family/0099/)
 ![0001.webp](0001.webp)
 
 ![0002.webp](0002.webp)
@@ -46,4 +46,4 @@
 
 ![0024.webp](0024.webp)
 
-##### [ANTERIOR](/spy-family/0080/)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[MENU](/spy-family/)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[PRÓXIMO](/spy-family/0099/)
+##### [ANTERIOR](/spy-family/0089/)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[MENU](/spy-family/)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[PRÓXIMO](/spy-family/0099/)
