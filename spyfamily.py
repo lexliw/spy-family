@@ -181,11 +181,6 @@ def folderName(url):
     return znum
 
 def fileName(url):
-    # https://mangaonline.biz/wp-content/uploads/2023/05/img_or2805231927_0005.png"
-    # file = url.replace('download-(','').replace(')','').split('/')[9]
-    # num = file.split('.')[0]
-    # znum = num.zfill(4)
-    # result = file.replace(f'{num}',f'{znum}')
     if 'https://mangaonline.biz/wp-content/uploads/' in url:
         result = url.split('/')[7]
     print(result)
@@ -225,6 +220,83 @@ def getManga(manga):
         with open(f'./{folder}/{file}', 'wb') as handler:
             handler.write(img_data)
 
+#%%
+mangaList = [
+    # "https://slimeread.com/ler/11139/cap-90",
+    # "https://slimeread.com/ler/11139/cap-91",
+    # "https://slimeread.com/ler/11139/cap-92",
+    # "https://slimeread.com/ler/11139/cap-93",
+    # "https://slimeread.com/ler/11139/cap-94",
+    # "https://slimeread.com/ler/11139/cap-95",
+    # "https://slimeread.com/ler/11139/cap-96",
+    # "https://slimeread.com/ler/11139/cap-97",
+    # "https://slimeread.com/ler/11139/cap-104",
+    # "https://slimeread.com/ler/11139/cap-105",
+    # "https://slimeread.com/ler/11139/cap-108",
+    # "https://slimeread.com/ler/11139/cap-109",
+    "./raw/0090.md",
+    "./raw/0091.md",
+    "./raw/0092.md",
+    "./raw/0093.md",
+    "./raw/0094.md",
+    "./raw/0095.md",
+    "./raw/0096.md",
+    "./raw/0097.md",
+    "./raw/0104.md",
+    "./raw/0105.md",
+]
+#%%
+# capitura do site https://slimeread.com/
+import requests
+import os
+def folderName(url):
+    folder = url.split('/')[2]
+    num = folder.split('.')[0]
+    znum = num.zfill(4)
+    return znum
+
+def fileName(url):
+    p=3
+    if '_1292192938.png' in url:
+        p=1
+    file = url.split('/')[5]
+    num = file.split('_')[p].split('.')[0]
+    znum = num.zfill(4)
+    result = file.replace(f'_{num}.',f'_{znum}.').replace(f'_{num}_',f'_{znum}_')
+    print(f'{file} - {num} - {znum} - {result}')
+    return result
+
+def getManga(manga):
+    folder = folderName(manga)
+    print(folder)
+
+    # criar pasta
+    newpath = f'./{folder}'
+    if not os.path.exists(newpath):
+        os.makedirs(newpath)
+        # print(f'pasta criada {newpath}')
+    else:
+        print('manga já baixado')
+        return
+    
+    f = open(manga, "r")
+    res = f.read()
+
+    imagesRaw = res.split('"')
+    listRawImages = []
+    for chunk in imagesRaw:
+        if 'https://black.slimeread.com/56ba9bf3' in chunk or 'https://black.slimeread.com/56ba9bf3' in chunk:
+            listRawImages.append(chunk)
+    # tirar duplicados
+    listRawImages = list(set(listRawImages))
+    listRawImages.sort()
+    # baixar imagens
+    for image in listRawImages:
+        print(f'imagens: {image}')
+        img_data = requests.get(image).content
+        file = fileName(image)
+        with open(f'./{folder}/{file}', 'wb') as handler:
+            handler.write(img_data)
 #%%
 
 for manga in mangaList:
@@ -364,6 +436,7 @@ mypath = './'
 onlyfolders = [f for f in listdir(mypath) if isdir(join(mypath, f))]
 onlyfolders.sort()
 onlyfolders.remove('.git')
+onlyfolders.remove('raw')
 print(onlyfolders)
 
 conteudo = '# Spy Family\n\n'
