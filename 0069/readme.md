@@ -1,5 +1,5 @@
 # 0069
-##### [ANTERIOR](/spy-family/0068/)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[MENU](/spy-family/)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[PRÓXIMO](/spy-family/0070/)
+##### [ANTERIOR](/spy-family/0068-5/)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[MENU](/spy-family/)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[PRÓXIMO](/spy-family/0070/)
 ![0001.jpg](0001.jpg)
 
 ![0002.jpg](0002.jpg)
@@ -34,4 +34,4 @@
 
 ![0017.jpg](0017.jpg)
 
-##### [ANTERIOR](/spy-family/0068/)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[MENU](/spy-family/)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[PRÓXIMO](/spy-family/0070/)
+##### [ANTERIOR](/spy-family/0068-5/)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[MENU](/spy-family/)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[PRÓXIMO](/spy-family/0070/)

@@ -1,5 +1,5 @@
 # 0025
-##### [ANTERIOR](/spy-family/0024/)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[MENU](/spy-family/)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[PRÓXIMO](/spy-family/0026/)
+##### [ANTERIOR](/spy-family/0024-5/)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[MENU](/spy-family/)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[PRÓXIMO](/spy-family/0026/)
 ![0001.jpg](0001.jpg)
 
 ![0002.jpg](0002.jpg)
@@ -54,4 +54,4 @@
 
 ![0027.jpg](0027.jpg)
 
-##### [ANTERIOR](/spy-family/0024/)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[MENU](/spy-family/)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[PRÓXIMO](/spy-family/0026/)
+##### [ANTERIOR](/spy-family/0024-5/)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[MENU](/spy-family/)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[PRÓXIMO](/spy-family/0026/)

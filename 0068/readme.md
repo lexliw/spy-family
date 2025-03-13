@@ -1,39 +1,37 @@
 # 0068
-##### [ANTERIOR](/spy-family/0067-2/)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[MENU](/spy-family/)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[PRÓXIMO](/spy-family/0069/)
-![0001.jpg](0001.jpg)
+##### [ANTERIOR](/spy-family/0067-2/)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[MENU](/spy-family/)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[PRÓXIMO](/spy-family/0068-5/)
+![img_or1809221638_0002.png](img_or1809221638_0002.png)
 
-![0002.jpg](0002.jpg)
+![img_or1809221638_0003.png](img_or1809221638_0003.png)
 
-![0003.jpg](0003.jpg)
+![img_or1809221638_0004.png](img_or1809221638_0004.png)
 
-![0004.jpg](0004.jpg)
+![img_or1809221638_0005.png](img_or1809221638_0005.png)
 
-![0005.jpg](0005.jpg)
+![img_or1809221638_0006.png](img_or1809221638_0006.png)
 
-![0006.jpg](0006.jpg)
+![img_or1809221638_0007.png](img_or1809221638_0007.png)
 
-![0007.jpg](0007.jpg)
+![img_or1809221638_0008.png](img_or1809221638_0008.png)
 
-![0008.jpg](0008.jpg)
+![img_or1809221638_0009.png](img_or1809221638_0009.png)
 
-![0009.jpg](0009.jpg)
+![img_or1809221638_0010.png](img_or1809221638_0010.png)
 
-![0010.jpg](0010.jpg)
+![img_or1809221638_0011.png](img_or1809221638_0011.png)
 
-![0011.jpg](0011.jpg)
+![img_or1809221638_0012.png](img_or1809221638_0012.png)
 
-![0012.jpg](0012.jpg)
+![img_or1809221638_0013.png](img_or1809221638_0013.png)
 
-![0013.jpg](0013.jpg)
+![img_or1809221638_0014.png](img_or1809221638_0014.png)
 
-![0014.jpg](0014.jpg)
+![img_or1809221638_0015.png](img_or1809221638_0015.png)
 
-![0015.jpg](0015.jpg)
+![img_or1809221638_0016.png](img_or1809221638_0016.png)
 
-![0016.jpg](0016.jpg)
+![img_or1809221638_0017.png](img_or1809221638_0017.png)
 
-![0017.jpg](0017.jpg)
+![img_or1809221638_0018.png](img_or1809221638_0018.png)
 
-![0018.jpg](0018.jpg)
-
-##### [ANTERIOR](/spy-family/0067-2/)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[MENU](/spy-family/)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[PRÓXIMO](/spy-family/0069/)
+##### [ANTERIOR](/spy-family/0067-2/)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[MENU](/spy-family/)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[PRÓXIMO](/spy-family/0068-5/)
