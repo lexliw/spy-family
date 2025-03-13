@@ -64,15 +64,15 @@ def getManga(manga):
 
 #%%
 mangaList = [
-    "https://mangaonline.biz/capitulo/spy-x-family-capitulo-89/",
-    "https://mangaonline.biz/capitulo/spy-x-family-capitulo-88/",
-    "https://mangaonline.biz/capitulo/spy-x-family-capitulo-87/",
-    "https://mangaonline.biz/capitulo/spy-x-family-capitulo-86/",
-    "https://mangaonline.biz/capitulo/spy-x-family-capitulo-85/",
-    "https://mangaonline.biz/capitulo/spy-x-family-capitulo-84/",
-    "https://mangaonline.biz/capitulo/spy-x-family-capitulo-83/",
-    "https://mangaonline.biz/capitulo/spy-x-family-capitulo-82/",
-    "https://mangaonline.biz/capitulo/spy-x-family-capitulo-81/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-89/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-88/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-87/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-86/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-85/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-84/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-83/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-82/",
+    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-81/",
     # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-80/",
     # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-79/",
     # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-78-5/",
@@ -88,22 +88,22 @@ mangaList = [
     # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-69/",
     # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-68-5/",
     # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-68/",
-    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-67-2/",
-    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-67/",
+    "https://mangaonline.biz/capitulo/spy-x-family-capitulo-67-2/",
+    "https://mangaonline.biz/capitulo/spy-x-family-capitulo-67/",
     # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-66/",
     # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-65/",
     # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-64/",
     # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-63/",
-    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-62-4/",
-    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-62-3/",
-    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-62-2/",
-    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-62-1/",
+    "https://mangaonline.biz/capitulo/spy-x-family-capitulo-62-4/",
+    "https://mangaonline.biz/capitulo/spy-x-family-capitulo-62-3/",
+    "https://mangaonline.biz/capitulo/spy-x-family-capitulo-62-2/",
+    "https://mangaonline.biz/capitulo/spy-x-family-capitulo-62-1/",
     # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-61/",
     # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-60/",
     # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-59/",
-    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-58-3/",
-    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-58-2/",
-    # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-58-1/",
+    "https://mangaonline.biz/capitulo/spy-x-family-capitulo-58-3/",
+    "https://mangaonline.biz/capitulo/spy-x-family-capitulo-58-2/",
+    "https://mangaonline.biz/capitulo/spy-x-family-capitulo-58-1/",
     # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-57/",
     # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-56/",
     # "https://mangaonline.biz/capitulo/spy-x-family-capitulo-55/",
@@ -178,6 +178,8 @@ def folderName(url):
     folder = url.split('/')[4].replace('.html','')
     num = folder.split('-')[4]
     znum = num.zfill(4)
+    if len(folder.split('-')) == 6:
+        znum = f'{znum}-{folder.split("-")[5]}'
     return znum
 
 def fileName(url):
@@ -219,7 +221,10 @@ def getManga(manga):
         file = fileName(image)
         with open(f'./{folder}/{file}', 'wb') as handler:
             handler.write(img_data)
+#%%
 
+for manga in mangaList:
+    getManga(manga)
 #%%
 mangaList = [
     # "https://slimeread.com/ler/11139/cap-90",
@@ -258,12 +263,13 @@ def folderName(url):
 def fileName(url):
     p=3
     if '_1292192938.png' in url:
-        p=1
+        p=2
     file = url.split('/')[5]
     num = file.split('_')[p].split('.')[0]
     znum = num.zfill(4)
     result = file.replace(f'_{num}.',f'_{znum}.').replace(f'_{num}_',f'_{znum}_')
-    print(f'{file} - {num} - {znum} - {result}')
+    result = result.replace('_','')
+    print(f'{file} > {result}')
     return result
 
 def getManga(manga):
