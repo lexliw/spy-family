@@ -502,7 +502,7 @@ conteudo = ''
 for folder in onlyfolders:
     conteudo += f'<a href="/spy-family/{folder}/index.html">{folder}</a>'
 
-with open('template-menu.html', 'r') as f:
+with open('../liwrary/template-menu.html', 'r') as f:
     template = f.readlines()
 
 for i in range(len(template)):
@@ -536,7 +536,7 @@ for i in range(len(onlyfolders)):
         conteudo += f'<img src="{file}"/>'
 
     
-    with open('template-capitulo.html', 'r') as f:
+    with open('../liwrary/template-capitulo.html', 'r') as f:
         template = f.readlines()
 
     for x in range(len(template)):
